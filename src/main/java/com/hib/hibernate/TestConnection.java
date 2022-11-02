@@ -8,9 +8,9 @@ public class TestConnection {
 
     public static void main(String[] args) {
 
-        String jdbcUrl = "jdbc:mysql://localhost:3306/uni";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/unii";
         String username = "uniuser";
-        String password = "uniuser";
+        String password = "123456fa";
         try {
             System.out.println("connecting to database : " + jdbcUrl);
             DriverManager.getConnection(jdbcUrl, username, password);

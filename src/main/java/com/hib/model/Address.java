@@ -6,32 +6,57 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Address {
 
+    @Column(name="Address_country")
+    private String aCountry;
 
-    @Column(name = "country")
-    private String countryName;
+    @Column(name ="Address_city")
+    private String aCity;
 
-    @Column(name = "city")
-    private String cityName;
+    @Column(name = "Address_street")
+    private String aStreet;
 
-    @Column(name = "street")
-    private String streetName;
-
-    @Column(name = "number")
-    private Integer number;
-
-    public Address(String countryName, String cityName, String streetName, Integer number) {
-
-        this.countryName = countryName;
-        this.cityName = cityName;
-        this.streetName = streetName;
-        this.number = number;
-    }
-
+    @Column(name = "Address_number")
+    private String aNumber;
 
     public Address() {
-
-
     }
 
+    public Address(String aCountry, String aCity, String aStreet, String aNumber) {
+        this.aCountry = aCountry;
+        this.aCity = aCity;
+        this.aStreet = aStreet;
+        this.aNumber = aNumber;
+    }
 
+    public String getaCountry() {
+        return aCountry;
+    }
+
+    public void setaCountry(String aCountry) {
+        this.aCountry = aCountry;
+    }
+
+    public String getaCity() {
+        return aCity;
+    }
+
+    public void setaCity(String aCity) {
+        this.aCity = aCity;
+    }
+
+    public String getaStreet() {
+        return aStreet;
+    }
+
+    public void setaStreet(String aStreet) {
+        this.aStreet = aStreet;
+    }
+
+    public String getaNumber() {
+        return aNumber;
+    }
+
+    public void setaNumber(String aNumber) {
+        this.aNumber = aNumber;
+    }
 }
